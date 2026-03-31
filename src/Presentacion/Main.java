@@ -13,6 +13,7 @@ public class Main {
         InterfazConsulta interfazConsulta = new InterfazConsulta();
         InterfazUsuario interfazUsuario = new InterfazUsuario();
         InterfazCelda interfazCelda = new InterfazCelda();
+        InterfazPago interfazPago = new InterfazPago();
 
         System.out.println("\n SISTEMA DE PARQUEADERO ");
         System.out.println("=========================");
@@ -28,6 +29,7 @@ public class Main {
             System.out.println("║ 3. Consultar DENTRO        ║");
             System.out.println("║ 4. Gestión Usuarios        ║");
             System.out.println("║ 5. Gestión Celdas          ║");
+            System.out.println("║ 6. Gestión Pagos           ║");
             System.out.println("║ 0. Salir                   ║");
             System.out.println("╚════════════════════════════╝");
             System.out.print("Opción: ");
@@ -56,6 +58,10 @@ public class Main {
 
                     case 5:
                         interfazCelda.mostrar();
+                        break;
+
+                    case 6:
+                        interfazPago.mostrar();
                         break;
 
                     case 0:
